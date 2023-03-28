@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Saulės elektrinės</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+      <div class="container">
+      
+        <a href="#" class="navbar-brand">LOGO</a>
+        <button 
+        class="navbar-toggler" 
+        type="button" 
+        data-bs-toggle="collapse"
+         data-bs-target="#navmenu"
+         >
+         <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navmenu">
+        <ul class="nav ustify-content-end">
+        <li class="nav-item">
+        <a href="#el" class="nav-link" aria-current="page">SAULĖS ELEKTRINĖS</a>
+        </li>
+        <li class="nav-item">
+        <a href="#getOffer" class="nav-link">GAUTI PASIŪLYMĄ</a>
+        </li>
+        <li class="nav-item">
+        <a href="#aboutUs" class="nav-link">APIE MUS</a>
+        </li>
+        <li class="nav-item active">
+        <a href="#contacts" class="nav-link active">KONTAKTAI</a>
+        </li>
+      </ul>
+      </div>
+      </div> 
+    </nav>
+    <!-- Showcase -->
+    <Section class = "bg-dark text-light p-1 text-center align-items-center">
+      <div class="card text-bg-dark">
+        <img class="img-fluid" src="../pic/solar_panel.jpg" alt="Solar system on the roof" style="max-height:35rem;">
+        <div class="card-img-overlay  align-items-center" md-y-5>
+          <h1 class="card-title">ALDO STATYBA</h1>
+          <p class="card-text lead my-4">Patikimas saulės elektrinių tiekėjas</p>
+          <button type="button" class="btn btn-warning btn-lg">Sužinoti daugiau</button>
+        </div>
+      </div>       
+    </Section>
+    <!-- Contact form -->
+    <section class="bg-warning text-light p-1 text-center align-items-center">
+    
+      <h1 class="card-title p-b-1">Gauti geriausią pasiūlymą</h1>
+    </section>
+    <section class="text-light p-5">
+      <div class="container"></div>
+      <form class="column g-3">
+        <div class="col-md-6 my-5">
+        <label for="customRange" class="form-label text-uppercase fs-5 fw-bold">Metinis elektros suvartojimas</label>
+          <p class="small">Pasirinkite metinį elektros energijos poreikį - kiek kilovatvalandžių elektros energijos sunaudojate per metus?</p>
+          <div class="text-center"><span class="navbar-brand mb-0 h1" id="rangeval">5300</span> kWH</div>
+          <input type="range" class="form-range" min="1000" max="10000" step="100" id="customRange"
+          onChange="document.getElementById('rangeval').innerText = document.getElementById('customRange').value">
+          <div class="d-flex justify-content-between">
+            <span>1000 kWH</span>
+            <span>10000 kWH</span>
+          </div>
+          </div>
+          <!-- Radio options to choose -->
+          <div class="col-md-6 my-5">
+            <p class="text-uppercase fs-5 fw-bold">MONTAVIMO BŪDAS</p>
+              <p class="small">Nurodykite, koks saulės elektrinės montavimo būdas Jums yra tinkamas</p>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="sliding" checked>
+                <label class="form-check-label" for="exampleRadios1">
+                ANT NUOŽULNIŲ STOGŲ
+                </label>
+             </div>
+             <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="flat">
+                <label class="form-check-label" for="exampleRadios2">
+                ANT PLOKŠČIŲ STOGŲ
+                </label>
+             </div>
+             <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="ground">
+                <label class="form-check-label" for="exampleRadios3">
+                ANT ŽEMĖS
+                </label>
+             </div>
+             
+          </div>
+          <!-- Form for input -->
+        <div class="col-md-6">
+          <label for="firstName" class="form-label">Vardas, pavardė | Įmonės pavadinimas</label>
+          <input type="text" class="form-control" id="firstName" required>
+          <label for="email" class="form-label">El.pašto adresas</label>
+          <input type="email" class="form-control" id="email" required>
+          <label for="phoneNum" class="form-label">Telefono numeris</label>
+          <input type="text" class="form-control" id="phoneNum" required>
+          <label for="town" class="form-label">Miestas</label>
+          <input type="text" class="form-control" id="town">
+          <label for="comments" class="form-label">Jūsų komentarai, pastabos</label>
+          <input type="text" class="form-control" id="comments">
+        </div>
+        <!-- Checkbox to agree with privacy statements -->
+        <div class="col-md-6">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="agree" id="flexCheckDefault" required>
+            <label class="form-check-label" for="flexCheckDefault">
+              Sutinku su Privatumo politika
+            </label>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <button type="submit" class="btn btn-warning">Gauti pasiūlymą</button>
+        </div>  
+      </form>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-dark text-muted">
+      <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+        <!-- Left -->
+        <div class="me-5 d-none d-lg-block">
+          <span>Susisiekite su mumis: </span>
+        </div>
+        <!-- Left -->
+        <!-- Right -->
+        <div>
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+        <i class="fab fa-facebook-f">
+      </a>
+      <p>
+        <i class="fas fa-envelope me-3">info@example.com
+        </p>
+      <a  href="tel:+370 600 00 000">
+        <i class="fas fa-phone me-3">+370 600 00 000
+          <!-- +370 600 00 000 -->
+        </a>
+    </div>
+      <!-- Copyright -->
+    <div class="text-center p-4">
+      © 2023 Copyright:
+      <a class="text-reset fw-bold" href="https://google.com/">ALDO</a>
+    </div>
+    <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+    
+  </body>
+</html>
