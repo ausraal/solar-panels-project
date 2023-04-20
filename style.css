@@ -1,0 +1,27 @@
+.card-inner {
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    /* position: relative; */
+}
+.card-inner.is-flipped {
+    transform: rotateY(180deg);
+}
+.card-face {
+    
+    /* width: fit-content; */
+    /* height: fit-content; */
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 36px;
+    
+}
+.card-face-front{
+    
+    align-items: center;
+    justify-content: center;
+  
+}
+.card-face-back {
+transform: rotateY(180deg);
+}
